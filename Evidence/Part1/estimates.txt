@@ -1,0 +1,26 @@
+Recovery Time Objective (RTO) and Recovery Point Objective (RPO) for this Multi-AZ, multi-region database in terms of:
+
+1.- Minimum RTO for a single AZ outage
+00:00 Occur on DB
+00:05 Receive alert
+00:08 AWS active failover and switche to database instance in standby.
+00:10 In standby instance becomes active and database is ready for performance
+RTO: Approximately about 10 minutes
+
+2.- Minimum RTO for a single region outage
+00:00 - Problem happens (0 minutes)
+00:05 - An amount of time passes before an alert triggers (5 minutes)
+00:06 - Alert triggers on-all staff (1 minute)
+00:13 - On-call staff may need to get out of bed, get to computer, log in, log onto VPN (7 minutes)
+00:33 - On-call staff starts diagnosing issue (33 minutes)
+00:53 - Root cause is discovered (20 minutes)
+00:58 - Remediation started (5 minutes)
+10:05 - Remediation completed (10 minutes)
+
+Total time: About 65 minutes or less
+
+3.- Minimum RPO for a single AZ outage
+We use multi AZ database with automated backups everyday is enabled, it take a few minutes to failover. So downtime a few minutes
+
+4.- Minimum RPO for a single region outage
+we use automatic everyday is enabled, the RPO will be based on data is backed up. If we set up a backup every 4 hours, the minimun RPO will be 4 hours. and reduce lost data.
