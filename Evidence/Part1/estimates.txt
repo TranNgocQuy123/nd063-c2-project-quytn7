@@ -12,10 +12,10 @@ RTO: Approximately about 10 minutes
 00:05 - An amount of time passes before an alert triggers (5 minutes)
 00:06 - Alert triggers on-all staff (1 minute)
 00:13 - On-call staff may need to get out of bed, get to computer, log in, log onto VPN (7 minutes)
-00:33 - On-call staff starts diagnosing issue (33 minutes)
+00:33 - On-call staff starts diagnosing issue (20 minutes)
 00:53 - Root cause is discovered (20 minutes)
 00:58 - Remediation started (5 minutes)
-10:05 - Remediation completed (10 minutes)
+01:05 - Remediation completed (7 minutes)
 
 Total time: About 65 minutes or less
 
